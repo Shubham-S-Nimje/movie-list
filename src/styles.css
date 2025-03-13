@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: yellow;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
